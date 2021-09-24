@@ -8,120 +8,34 @@
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
-    <HorizontalScrollView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlMain"
         android:layout_width="match_parent"
-        android:layout_height="150sp"
-        android:background="@color/gray">
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="15sp">
-
-            <LinearLayout
-                android:layout_width="115sp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginRight="15sp"
-                android:background="@drawable/card"
-                android:backgroundTint="@color/primary_orange"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15sp"
-                    android:fontFamily="@font/robotoblack"
-                    android:gravity="center_horizontal"
-                    android:text="@string/salonname"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15sp"
-                    android:gravity="center_horizontal"
-                    android:text="2021-12-31" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="115sp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginRight="15sp"
-                android:background="@drawable/card"
-                android:backgroundTint="@color/primary_orange"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15sp"
-                    android:fontFamily="@font/robotoblack"
-                    android:gravity="center_horizontal"
-                    android:text="@string/salonname"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15sp"
-                    android:gravity="center_horizontal"
-                    android:text="2021-12-31" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="115sp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginRight="15sp"
-                android:background="@drawable/card"
-                android:backgroundTint="@color/primary_orange"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15sp"
-                    android:fontFamily="@font/robotoblack"
-                    android:gravity="center_horizontal"
-                    android:text="@string/salonname"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15sp"
-                    android:gravity="center_horizontal"
-                    android:text="2021-12-31" />
-            </LinearLayout>
-
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="15sp">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/salons"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 
 
-        </LinearLayout>
-    </ScrollView>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
